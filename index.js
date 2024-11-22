@@ -24,9 +24,11 @@ async function fetchGitHubProfile(user) {
 
 function displayProfile(profile) {
   const profileHTML = `
+  <div class="div0">
     <img src="${profile.avatar_url}" alt="Profile Image">
     <h>${profile.name || "No name provided"}</h>
-    <div>
+    </div></br>
+    <div class="div1">
       <p>User: ${profile.login}</p>
       <p>Followers: ${profile.followers}</p>
       <p>Public Repositories: ${profile.public_repos}</p>
